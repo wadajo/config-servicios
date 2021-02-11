@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: lodecra-rest
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: mysql://${servidorBD}:3306/lodecrajpa?serverTimezone=America/Argentina/Buenos_Aires
+    username: adriana
+    password: MiPass2020
+
+server:
+  port: 8838
+  servlet:
+    context-path: /rest
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${servidoreureka}:8761/eureka
+  instance:
+    hostname: ${servidoreureka}
