@@ -4,8 +4,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${servidorBD}:3306/lodecrajpa?serverTimezone=America/Argentina/Buenos_Aires
-    username: adriana
-    password: MiPass2020
+    username: ${user}
+    password: ${pass}
 
 server:
   port: 8838
