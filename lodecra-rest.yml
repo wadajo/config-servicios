@@ -11,9 +11,3 @@ server:
   port: 8838
   servlet:
     context-path: /rest
-
-eureka:
-  client:
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://${servidoreureka}:8761/eureka
